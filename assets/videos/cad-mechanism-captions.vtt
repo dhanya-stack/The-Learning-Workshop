@@ -1,0 +1,20 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:04.200
+Start the design: In Fusion 360, open the Design workspace and select the Solid tab.
+
+00:00:04.200 --> 00:00:08.400
+Create a sketch: Choose Create Sketch and select an origin plane such as XY.
+
+00:00:08.400 --> 00:00:12.600
+Sketch geometry: Use rectangle and circle tools; apply dimensions and constraints.
+
+00:00:12.600 --> 00:00:16.800
+Make solids: Finish Sketch, then Solid > Create > Extrude selected profiles.
+
+00:00:16.800 --> 00:00:21.000
+Assemble components: Create separate components. Use Assemble > Joint for revolute and slider joints.
+
+00:00:21.000 --> 00:00:25.200
+Check the movement: Drive a joint and compare extreme slider positions; inspect interferences.
+

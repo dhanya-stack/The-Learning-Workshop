@@ -1,0 +1,367 @@
+{
+  "site": "The Learning Workshop",
+  "total_lessons": 70,
+  "new_lessons": 58,
+  "subjects": {
+    "Mathematics": [
+      {
+        "slug": "vectors",
+        "title": "Vectors — magnitude and direction",
+        "status": "previously approved"
+      },
+      {
+        "slug": "derivatives",
+        "title": "Derivatives — understanding change",
+        "status": "previously approved"
+      },
+      {
+        "slug": "integrals",
+        "title": "Integrals — adding up change",
+        "status": "previously approved"
+      },
+      {
+        "slug": "functions-graphs",
+        "title": "Functions and Graphs",
+        "status": "new draft"
+      },
+      {
+        "slug": "limits-continuity",
+        "title": "Limits and Continuity",
+        "status": "new draft"
+      },
+      {
+        "slug": "vector-components",
+        "title": "Vector Components and Resultants",
+        "status": "new draft"
+      },
+      {
+        "slug": "dot-cross-products",
+        "title": "Dot Products and Cross Products",
+        "status": "new draft"
+      },
+      {
+        "slug": "trigonometry-applications",
+        "title": "Trigonometry and Its Applications",
+        "status": "new draft"
+      },
+      {
+        "slug": "optimisation",
+        "title": "Optimisation Using Calculus",
+        "status": "new draft"
+      },
+      {
+        "slug": "integration-applications",
+        "title": "Applications of Integration",
+        "status": "new draft"
+      },
+      {
+        "slug": "differential-equations",
+        "title": "Introduction to Differential Equations",
+        "status": "new draft"
+      },
+      {
+        "slug": "matrices",
+        "title": "Matrices and Linear Equations",
+        "status": "new draft"
+      },
+      {
+        "slug": "coordinate-geometry",
+        "title": "Coordinate Geometry in 2D and 3D",
+        "status": "new draft"
+      },
+      {
+        "slug": "probability",
+        "title": "Probability",
+        "status": "new draft"
+      },
+      {
+        "slug": "statistical-distributions",
+        "title": "Statistical Distributions",
+        "status": "new draft"
+      },
+      {
+        "slug": "numerical-methods",
+        "title": "Numerical Methods and Approximation",
+        "status": "new draft"
+      }
+    ],
+    "Physics": [
+      {
+        "slug": "newtons-laws",
+        "title": "Newton’s Laws of Motion",
+        "status": "previously approved"
+      },
+      {
+        "slug": "pressure-fluids",
+        "title": "Pressure in Fluids",
+        "status": "previously approved"
+      },
+      {
+        "slug": "energy",
+        "title": "Work and Conservation of Energy",
+        "status": "previously approved"
+      },
+      {
+        "slug": "motion-kinematics",
+        "title": "Displacement, Velocity and Acceleration",
+        "status": "new draft"
+      },
+      {
+        "slug": "free-body",
+        "title": "Forces, Free-Body Diagrams and Equilibrium",
+        "status": "new draft"
+      },
+      {
+        "slug": "friction-drag",
+        "title": "Friction and Drag",
+        "status": "new draft"
+      },
+      {
+        "slug": "momentum-collisions",
+        "title": "Momentum and Collisions",
+        "status": "new draft"
+      },
+      {
+        "slug": "circular-motion",
+        "title": "Circular Motion and Gravitation",
+        "status": "new draft"
+      },
+      {
+        "slug": "torque-rotation",
+        "title": "Torque and Rotational Motion",
+        "status": "new draft"
+      },
+      {
+        "slug": "springs-oscillations",
+        "title": "Springs and Oscillations",
+        "status": "new draft"
+      },
+      {
+        "slug": "fluid-properties",
+        "title": "Properties of Fluids",
+        "status": "new draft"
+      },
+      {
+        "slug": "buoyancy",
+        "title": "Buoyancy and Floating Objects",
+        "status": "new draft"
+      },
+      {
+        "slug": "fluid-continuity",
+        "title": "Conservation of Mass and Fluid Flow",
+        "status": "new draft"
+      },
+      {
+        "slug": "bernoulli",
+        "title": "Bernoulli’s Principle",
+        "status": "new draft"
+      },
+      {
+        "slug": "pipe-pressure-loss",
+        "title": "Flow Through Pipes and Pressure Losses",
+        "status": "new draft"
+      },
+      {
+        "slug": "pumps",
+        "title": "Pumps and Fluid Systems",
+        "status": "new draft"
+      },
+      {
+        "slug": "heat-transfer",
+        "title": "Heat Transfer",
+        "status": "new draft"
+      },
+      {
+        "slug": "thermodynamics",
+        "title": "Introduction to Thermodynamics",
+        "status": "new draft"
+      },
+      {
+        "slug": "waves-sound-light",
+        "title": "Waves, Sound and Light",
+        "status": "new draft"
+      },
+      {
+        "slug": "electricity-magnetism",
+        "title": "Electricity and Magnetism",
+        "status": "new draft"
+      }
+    ],
+    "Chemistry": [
+      {
+        "slug": "atomic-structure",
+        "title": "Atomic Structure",
+        "status": "previously approved"
+      },
+      {
+        "slug": "acids-bases",
+        "title": "Acids and Bases",
+        "status": "previously approved"
+      },
+      {
+        "slug": "chemical-bonding",
+        "title": "Chemical Bonding",
+        "status": "previously approved"
+      },
+      {
+        "slug": "periodic-table",
+        "title": "The Periodic Table",
+        "status": "new draft"
+      },
+      {
+        "slug": "orbitals",
+        "title": "Electrons and Atomic Orbitals",
+        "status": "new draft"
+      },
+      {
+        "slug": "molecular-shapes",
+        "title": "Molecular Shapes and Polarity",
+        "status": "new draft"
+      },
+      {
+        "slug": "states-of-matter",
+        "title": "States of Matter and Phase Changes",
+        "status": "new draft"
+      },
+      {
+        "slug": "reaction-balancing",
+        "title": "Chemical Reactions and Balancing Equations",
+        "status": "new draft"
+      },
+      {
+        "slug": "moles",
+        "title": "Moles and Chemical Calculations",
+        "status": "new draft"
+      },
+      {
+        "slug": "gas-laws",
+        "title": "Gases and Gas Laws",
+        "status": "new draft"
+      },
+      {
+        "slug": "solutions",
+        "title": "Solutions and Concentrations",
+        "status": "new draft"
+      },
+      {
+        "slug": "reaction-energy",
+        "title": "Energy in Chemical Reactions",
+        "status": "new draft"
+      },
+      {
+        "slug": "equilibrium",
+        "title": "Chemical Equilibrium",
+        "status": "new draft"
+      },
+      {
+        "slug": "ph-buffers",
+        "title": "pH, Indicators and Buffers",
+        "status": "new draft"
+      },
+      {
+        "slug": "redox",
+        "title": "Oxidation, Reduction and Electrochemistry",
+        "status": "new draft"
+      },
+      {
+        "slug": "reaction-rates",
+        "title": "Reaction Rates and Catalysts",
+        "status": "new draft"
+      }
+    ],
+    "Space & Aerospace": [
+      {
+        "slug": "rockets",
+        "title": "How Rockets Work",
+        "status": "previously approved"
+      },
+      {
+        "slug": "satellite-orbits",
+        "title": "How Satellites Orbit Earth",
+        "status": "previously approved"
+      },
+      {
+        "slug": "satellite-power",
+        "title": "Powering a Satellite",
+        "status": "previously approved"
+      },
+      {
+        "slug": "escape-velocity",
+        "title": "Gravity and Escape Velocity",
+        "status": "new draft"
+      },
+      {
+        "slug": "rocket-equation",
+        "title": "Rocket Stages and the Rocket Equation",
+        "status": "new draft"
+      },
+      {
+        "slug": "rocket-engines",
+        "title": "Rocket Propulsion and Engines",
+        "status": "new draft"
+      },
+      {
+        "slug": "rocket-stability",
+        "title": "Rocket Stability and Aerodynamics",
+        "status": "new draft"
+      },
+      {
+        "slug": "launch-loads",
+        "title": "Launch Loads and Vibrations",
+        "status": "new draft"
+      },
+      {
+        "slug": "space-materials",
+        "title": "Materials for Rockets and Spacecraft",
+        "status": "new draft"
+      },
+      {
+        "slug": "orbit-types",
+        "title": "Different Types of Satellite Orbits",
+        "status": "new draft"
+      },
+      {
+        "slug": "orbital-transfers",
+        "title": "Orbital Transfers and Manoeuvres",
+        "status": "new draft"
+      },
+      {
+        "slug": "satellite-subsystems",
+        "title": "Anatomy of a Satellite",
+        "status": "new draft"
+      },
+      {
+        "slug": "attitude-control",
+        "title": "Attitude Control and Reaction Wheels",
+        "status": "new draft"
+      },
+      {
+        "slug": "satellite-communications",
+        "title": "Satellite Communications and Antennas",
+        "status": "new draft"
+      },
+      {
+        "slug": "space-thermal",
+        "title": "Thermal Management in Space",
+        "status": "new draft"
+      },
+      {
+        "slug": "deployable-origami",
+        "title": "Deployable Mechanisms and Origami in Space",
+        "status": "new draft"
+      },
+      {
+        "slug": "space-environment",
+        "title": "The Space Environment",
+        "status": "new draft"
+      },
+      {
+        "slug": "satellite-mission",
+        "title": "Designing a Simple Satellite Mission",
+        "status": "new draft"
+      }
+    ]
+  },
+  "lesson_policy": "Text-first. Add diagrams or animations only when they materially improve understanding.",
+  "licensing": "Original educational content. MIT OCW used as a source for topic selection; consult each linked work for any reuse permissions."
+}

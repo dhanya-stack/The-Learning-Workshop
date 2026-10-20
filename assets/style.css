@@ -1,0 +1,185 @@
+/* The Learning Workshop — accessible paper / ink themes; monospace throughout */
+:root{color-scheme:light;--paper:#f5f1e9;--card:#fffcf6;--ink:#2a1c15;--brown:#322219;--muted:#685548;--line:#b5a99d;--thin:#ded6cb;--soft:#ebe4d9;--accent:#7f4a2d;--shadow:rgba(32,23,16,.05);--mono:"Courier Prime","Courier New",Courier,monospace}
+html[data-theme="dark"]{color-scheme:dark;--paper:#1d1b1a;--card:#282521;--ink:#f1e8d9;--brown:#e4d9c9;--muted:#c0ad9a;--line:#73665c;--thin:#514841;--soft:#343029;--accent:#e4b58a;--shadow:rgba(0,0,0,.2)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--brown);font:15px/1.8 var(--mono);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.18;background:repeating-linear-gradient(0deg,transparent,transparent 37px,var(--thin) 38px)}
+a{color:inherit}a:hover{color:var(--accent)}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+::selection{background:var(--accent);color:var(--paper)}
+h1,h2,h3,p{margin-top:0}h1,h2,h3{font-family:var(--mono);color:var(--ink);font-weight:700;letter-spacing:-.04em}h1{font-size:clamp(37px,5.1vw,65px);line-height:1.12;letter-spacing:-.055em;margin-bottom:25px}h2{font-size:clamp(25px,3.4vw,39px);line-height:1.25;margin:0}h3{font-size:clamp(20px,2.4vw,26px);line-height:1.3;margin:0 0 10px}
+button,input,select,textarea{font:inherit}.wrap{width:min(100%,1130px);margin:auto;padding:0 42px}
+.header{border-bottom:1px solid var(--line);background:var(--paper)}.header .wrap{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{font-weight:700;font-size:14px;text-decoration:none;color:var(--ink)}.header-tools{display:flex;align-items:center;gap:25px}nav{display:flex;gap:28px}nav a{text-decoration:none;font-size:13px}nav a:hover{text-decoration:underline}
+.theme-toggle{color:var(--ink);background:transparent;border:1px solid var(--line);padding:6px 12px;font-size:12px;cursor:pointer;border-radius:2px;white-space:nowrap}.theme-toggle:hover{background:var(--soft)}
+.hero{padding:86px 0 88px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:40px}.hero p{font-size:15px;margin:0}.hero-art{width:100%;min-height:265px;display:grid;place-items:center;border:1px solid var(--line);background:var(--card);position:relative;overflow:hidden}.hero-art::after{content:"";position:absolute;inset:18px;border:1px solid var(--thin);pointer-events:none}.hero-art svg{width:80%;max-height:245px}
+svg.illustration,.hero-art svg,.project-art svg{stroke:var(--ink);fill:none;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}.fine{stroke-width:1}.guide{stroke:var(--muted);stroke-width:.9;stroke-dasharray:3.5 6}
+.section{padding:67px 0 18px;scroll-margin-top:26px}.section-heading{display:flex;justify-content:space-between;gap:20px;align-items:baseline;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:23px}.section-heading small,.meta{color:var(--muted);font-size:12px}.meta{font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+/* Full-width vertical accordion: click any subject to expose all its linked lessons */
+.course-directory{border-top:1px solid var(--line)}.course-subject{border-bottom:1px solid var(--line)}
+.course-subject summary{display:flex;align-items:center;justify-content:space-between;gap:30px;list-style:none;cursor:pointer;padding:23px 7px 23px 0}
+.course-subject summary::-webkit-details-marker{display:none}.course-subject summary::marker{content:""}
+.course-subject summary:hover .course-name{text-decoration:underline;text-underline-offset:4px}.course-name{font-size:clamp(18px,2.4vw,25px);font-weight:700;color:var(--ink);letter-spacing:-.04em}
+.course-subtitle{font-size:12px;color:var(--muted);margin:5px 0 0}.course-summary-end{display:flex;gap:16px;align-items:center;white-space:nowrap;font-size:12px;color:var(--muted)}
+.course-chevron{font-size:22px;color:var(--ink);display:inline-block;transition:transform .16s}.course-subject[open] .course-chevron{transform:rotate(45deg)}
+.directory-lesson-list{list-style:none;padding:0 5px 20px 13px;margin:0;max-width:860px}.directory-lesson-list li{border-top:1px solid var(--thin);display:grid;grid-template-columns:35px 1fr auto;align-items:baseline;gap:13px;padding:12px 4px}
+.directory-lesson-list .lesson-number{font-size:11px;color:var(--muted)}.directory-lesson-list a{text-decoration:none;line-height:1.6}.directory-lesson-list a:hover{text-decoration:underline;text-underline-offset:4px}.directory-lesson-list .arrow{font-size:18px;color:var(--muted)}
+.course-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.course-search{min-width:0;width:min(100%,360px);border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 13px;font-size:12px}.course-search::placeholder{color:var(--muted)}.course-action-buttons{display:flex;gap:12px}.text-button{background:none;border:0;color:var(--accent);font-size:12px;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:7px 0}.search-empty{display:none;padding:20px 0;color:var(--muted)}
+/* Existing project sketches, retained rather than adding decorative imagery */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project-card{min-width:0;background:var(--card);border:1px solid var(--line)}.project-art{height:175px;display:grid;place-items:center;background:var(--soft);border-bottom:1px solid var(--line);padding:22px}.project-art svg{max-width:235px;max-height:154px;width:100%;height:100%}.project-copy{padding:21px 22px 24px}.project-copy h3{font-size:21px;margin:8px 0}.project-copy p{font-size:13px;line-height:1.75}.bottom-space{height:85px}
+.lesson-shell{max-width:1030px;margin:0 auto;padding:0 42px 100px}.crumb{margin:38px 0 26px;font-size:12px}.crumb a{text-underline-offset:3px}.lesson-top{border-bottom:1px solid var(--line);padding-bottom:31px;margin-bottom:38px}.lesson-top h1{font-size:clamp(34px,4.6vw,57px);max-width:850px;margin:14px 0 18px;overflow-wrap:break-word}.deck{font-size:16px;max-width:800px}.eyebrow{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.lesson-layout{display:grid;grid-template-columns:minmax(0,1fr) 183px;gap:40px}.lesson-body{max-width:725px;min-width:0}
+.lesson-body h2{font-size:clamp(21px,3vw,29px);margin:43px 0 18px}.lesson-body h2:first-child{margin-top:0}.lesson-body h3{font-size:20px;margin:25px 0 12px}.lesson-body p{margin:0 0 17px}.lesson-body ol,.lesson-body ul{padding-left:24px}.lesson-body li{margin-bottom:8px}.side-nav{position:sticky;top:32px;align-self:start;border-left:1px solid var(--line);padding-left:15px}.side-nav p{font-size:11px;color:var(--muted)}.side-nav a{display:block;text-decoration:none;margin:12px 0;font-size:12px}.side-nav a:hover{text-decoration:underline}
+.diagram-panel{border:1px solid var(--line);background:var(--card);padding:15px 15px 8px;margin:22px 0}.diagram-panel svg{display:block;width:100%;height:auto;overflow:visible}.diagram-panel figcaption{font-size:11px;color:var(--muted);margin:8px 4px 6px}.diagram-panel svg text{font-family:var(--mono);font-size:14px;fill:var(--ink)}
+.equation{font:18px/1.55 var(--mono);border-left:3px solid var(--accent);padding:10px 15px;margin:20px 0;background:var(--soft);overflow-wrap:anywhere}
+.problem{border:1px solid var(--line);padding:18px 22px;background:var(--card);margin:17px 0}.problem strong{color:var(--ink)}.problem details{margin-top:13px;border-top:1px solid var(--thin);padding-top:12px}.problem summary{cursor:pointer;text-decoration:underline;text-underline-offset:3px;font-weight:bold}.problem details p:last-child{margin-bottom:0}
+.lab{border:1px solid var(--line);padding:22px;background:var(--card);margin:25px 0}.lab h3{margin:0 0 10px}.control-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:20px 0}.control label{display:flex;justify-content:space-between;gap:12px;font-size:12px;margin-bottom:8px}.control output{font-weight:bold}.control input{width:100%;accent-color:var(--accent);cursor:pointer}.lab-result{border-top:1px solid var(--thin);padding-top:14px;font-size:13px;line-height:1.9}.lab-note,.legend{font-size:12px;color:var(--muted);margin:10px 0 0}
+.refs{border-top:1px solid var(--line);padding-top:12px}.refs a{text-underline-offset:3px;overflow-wrap:anywhere}.back-link{margin:50px 0;border-top:1px solid var(--line);padding-top:20px}.back-link a{text-underline-offset:3px}.page-footer{font-size:11px;color:var(--muted)}
+.subject-index .lesson-top h1{font-size:clamp(34px,4.8vw,61px)}.subject-lessons-all{margin:0;padding:0;list-style:none;border-top:1px solid var(--line)}.subject-lesson-link{border-bottom:1px solid var(--thin);padding:14px 3px;display:flex;align-items:baseline;gap:18px}.subject-lesson-link a{font-size:14px;text-decoration:underline;text-underline-offset:3px}.lesson-number{min-width:26px;color:var(--muted);font-size:12px}.key-question{background:var(--card);padding:14px 18px;border:1px solid var(--thin);font-size:13px}.lesson-next-prev{border-top:1px solid var(--line);padding:18px 0;margin-top:48px;display:flex;justify-content:space-between;gap:18px}.lesson-next-prev a{max-width:48%;font-size:12px;line-height:1.6;text-underline-offset:3px}
+.extra-problems{border-top:1px solid var(--line);margin-top:36px;padding-top:15px}.extra-problems .exercise-intro{font-size:13px;color:var(--muted)}.exercise-counter{font-size:11px;color:var(--accent);text-transform:uppercase;letter-spacing:.07em;margin:0 0 7px}.extra-problems .problem{margin:13px 0}.extra-problems .problem p{margin-bottom:8px}.extra-problems .problem details p{margin-bottom:0}
+@media(max-width:760px){.wrap{padding:0 22px}.header .wrap{min-height:71px}.brand{font-size:12px}.header-tools{gap:12px}nav{gap:13px}nav a{font-size:12px}.theme-toggle{font-size:11px;padding:5px 8px}.hero{grid-template-columns:1fr;padding:54px 0 50px;gap:30px}.hero h1{font-size:clamp(35px,9vw,52px)}.hero-art{min-height:195px}.hero-art svg{max-height:160px;width:70%}.section{padding-top:52px}.section-heading{align-items:start}.course-actions{flex-wrap:wrap}.course-action-buttons{margin-left:auto}.course-summary-end{gap:8px}.course-summary-end .count{font-size:11px}.course-name{font-size:17px}.course-subtitle{font-size:11px}.directory-lesson-list{padding-left:0}.directory-lesson-list li{grid-template-columns:23px 1fr 12px;gap:8px;font-size:13px}.projects{grid-template-columns:1fr}.project-art{height:172px}.lesson-shell{padding:0 22px 70px}.lesson-layout{display:block}.side-nav{display:none}.lesson-top h1{font-size:clamp(31px,8vw,42px)}.deck{font-size:14px}.lesson-body h2{font-size:24px}.control-grid{grid-template-columns:1fr}.lesson-next-prev{flex-direction:column}.lesson-next-prev a{max-width:100%}}
+@media(max-width:390px){.header .wrap{flex-wrap:wrap;padding-top:14px;padding-bottom:14px}.header-tools{width:100%;justify-content:space-between}.course-summary-end .count{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.course-chevron{transition:none}}
+@media print{body{background:white}nav,.theme-toggle,.side-nav,.course-actions,.lab{display:none}.lesson-layout{display:block}}
+
+/* V4: diagrams that are part of the explanation, never background decoration. */
+.header .header-tools{width:100%;justify-content:space-between}
+.concept-demo{border:1px solid var(--line);background:var(--card);margin:28px 0;padding:19px 22px 22px}
+.concept-demo h3{font-size:19px;margin:2px 0 8px}
+.concept-demo .demo-summary{font-size:13px;color:var(--muted);margin:0 0 15px}
+.concept-demo .demo-stage{border:1px solid var(--thin);background:var(--soft);padding:12px;margin:15px 0}
+.concept-demo svg{display:block;max-width:100%;height:auto;width:100%;overflow:visible}
+.concept-demo svg text{font-family:var(--mono);fill:var(--ink);font-size:12px}
+.concept-demo svg .diagram-ink{stroke:var(--ink);stroke-width:2;fill:none;stroke-linejoin:round;stroke-linecap:round}
+.concept-demo svg .diagram-accent{stroke:var(--accent);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.concept-demo svg .diagram-fill{fill:var(--accent);opacity:.12}
+.concept-demo svg .diagram-water{fill:#8baeb9;opacity:.4}
+html[data-theme="dark"] .concept-demo svg .diagram-water{fill:#7cb8cc;opacity:.42}
+.concept-demo svg .diagram-muted{stroke:var(--line);stroke-width:1.5;fill:none;stroke-dasharray:4 5}
+.concept-demo .demo-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 20px}
+.concept-demo .demo-control label{display:flex;align-items:baseline;justify-content:space-between;gap:10px;font-size:12px;margin-bottom:4px}
+.concept-demo input[type="range"]{width:100%;accent-color:var(--accent);cursor:pointer}
+.concept-demo .demo-values{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 20px;border-top:1px solid var(--line);margin-top:16px;padding-top:14px}
+.concept-demo .demo-values p{margin:0;font-size:13px}.concept-demo .demo-values strong{font-size:16px;color:var(--ink)}
+.concept-demo .demo-footnote{font-size:11px;margin:12px 0 0;color:var(--muted)}
+@media(max-width:630px){.concept-demo{padding:14px}.concept-demo .demo-controls,.concept-demo .demo-values{grid-template-columns:1fr}.header .header-tools{gap:10px;flex-wrap:wrap}}
+/* The author stylesheet must not override the HTML hidden attribute during search. */
+[hidden]{display:none !important}
+
+/* Search hides nonmatches even where list entries have author-defined display rules. */
+.search-excluded,[hidden]{display:none!important}
+.search-result-count{font-size:12px;color:var(--muted);margin:0 0 12px;min-height:1.2em}
+
+
+/* V7 desktop reading layout: a more compact editorial directory, not more decoration. */
+@media (min-width: 761px) {
+  .wrap { width:min(100%,1240px); padding-inline:38px; }
+  .header .wrap { min-height:68px; }
+  .hero { grid-template-columns:minmax(0,1fr) 275px; gap:38px; padding:36px 0 42px; }
+  .hero h1 { font-size:clamp(40px,4.1vw,56px); line-height:1.06; margin-bottom:14px; }
+  .hero p { font-size:14px; }
+  .hero-art { min-height:164px; height:174px; width:260px; justify-self:end; }
+  .hero-art::after { inset:12px; }
+  .hero-art svg { max-height:158px; width:65%; }
+  .section { padding-top:47px; }
+  .section-heading { margin-bottom:15px; padding-bottom:14px; }
+  .course-actions { margin-bottom:11px; }
+  .course-subject summary { padding:15px 4px 15px 0; min-height:72px; }
+  .course-subject summary > div:first-child { display:grid; flex:1; grid-template-columns:minmax(265px,.85fr) minmax(260px,1.3fr); gap:15px; align-items:center; }
+  .course-subtitle { margin:0; max-width:450px; }
+  .directory-lesson-list { max-width:none; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:35px; padding:0 7px 19px 0; }
+  .directory-lesson-list li { grid-template-columns:29px minmax(0,1fr) 12px; gap:8px; padding:10px 3px; }
+  .directory-lesson-list a { font-size:13px; }
+  .bottom-space { height:44px; }
+  .lesson-shell { max-width:1190px; padding-inline:38px; }
+  .crumb { margin:23px 0 16px; }
+  .lesson-top { padding-bottom:20px; margin-bottom:27px; }
+  .lesson-top h1 { font-size:clamp(34px,4vw,52px); line-height:1.15; max-width:1030px; margin:10px 0 12px; }
+  .lesson-top .deck { max-width:950px; font-size:15px; }
+  .lesson-layout { grid-template-columns:minmax(0,1fr) 195px; gap:40px; }
+  .lesson-body { max-width:none; }
+  .lesson-body h2 { margin:32px 0 12px; }
+  .lesson-body h3 { margin:23px 0 9px; }
+  .lesson-body p { margin-bottom:14px; }
+  .side-nav { background:var(--card); border-left:2px solid var(--accent); padding:14px 13px 16px 18px; top:20px; }
+  .side-nav p { margin-bottom:10px; }
+  .side-nav a { margin:9px 0; }
+  .subject-lessons-all { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:32px; }
+  .subject-lesson-link { gap:13px; padding:12px 3px; }
+}
+@media (min-width:761px) and (max-width:1000px) {
+  .course-subject summary > div:first-child { display:block; }
+  .course-subtitle { margin-top:3px; }
+  .lesson-layout { grid-template-columns:minmax(0,1fr) 160px; gap:25px; }
+  .lesson-shell { padding-inline:28px; }
+  .side-nav { padding:12px; }
+}
+@media (max-width:760px) {
+  .hero { padding-block:38px 40px; }
+  .hero-art { min-height:165px; }
+  .hero-art svg { max-height:138px; }
+  .section { padding-top:42px; }
+  .course-subject summary { padding-block:17px; }
+  .lesson-top { margin-bottom:25px; padding-bottom:20px; }
+  .crumb { margin:22px 0 16px; }
+  .lesson-body h2 { margin-top:34px; }
+}
+
+/* V8: publication review — keyboard skip link and discreet source footer. */
+.skip-link{position:absolute;left:12px;top:-90px;background:var(--card);color:var(--ink);border:2px solid var(--accent);padding:9px 13px;z-index:1000;text-decoration:none}
+.skip-link:focus{top:10px}
+.reference-footer{font-size:11px;color:var(--muted);padding:18px 24px 25px;text-align:center;border-top:1px solid var(--thin);max-width:1240px;margin:0 auto}
+.reference-footer a{text-decoration:underline;text-underline-offset:3px}
+@media print{.skip-link,.reference-footer{display:none}}
+
+/* V9 accessibility polish. */
+:where(a,button,input,summary,select,textarea):focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:0.01ms!important;scroll-behavior:auto!important;transition-duration:0.01ms!important}}
+@media (forced-colors:active){.course-search,.project-card,.problem,.lab,.concept-demo{border:1px solid CanvasText}}
+
+/* V10: compact expandable project guides; no decorative project art. */
+.project-directory{border-top:1px solid var(--line);margin-top:19px}
+.project-directory-intro{font-size:13px;margin:0 0 17px;color:var(--muted)}
+.project-subject-info{display:flex;align-items:baseline;gap:23px;min-width:0}
+.project-seq{font-size:12px;color:var(--muted);width:25px;flex:none}
+.project-title-lines{min-width:0}
+.project-subject summary{padding:22px 4px}
+.project-subject .course-name{font-size:clamp(17px,2.2vw,24px)}
+.project-reveal{padding:4px 6px 26px 49px;font-size:13px;max-width:810px}
+.project-reveal p{margin:0 0 9px}
+.project-reveal p a{text-underline-offset:3px}
+.project-guide-link{display:inline-flex;gap:10px;align-items:center;color:var(--accent);font-weight:bold;margin-top:7px;text-decoration:underline;text-underline-offset:4px}
+.project-guide-link:hover{text-decoration-thickness:2px}
+.project-materials{border:1px solid var(--thin);background:var(--card);padding:17px 21px;margin:23px 0}
+.project-materials p{margin:0}
+.project-safety{font-size:13px;color:var(--muted);border-left:3px solid var(--accent);padding:9px 15px;background:var(--soft);margin:25px 0}
+.project-topic-links{list-style:none;padding-left:0!important}
+.project-topic-links li{margin:8px 0;border-bottom:1px solid var(--thin);padding-bottom:8px}
+.project-topic-links a{text-underline-offset:4px}
+.project-body ol{padding-left:28px}
+.project-body ol li{padding-left:6px;margin-bottom:11px}
+@media(max-width:760px){.project-subject-info{gap:12px}.project-subject .count{display:none}.project-reveal{padding-left:12px}.project-subject summary{gap:12px}}
+/* Project rows override the desktop two-column COURSE heading grid. */
+.project-subject summary > div:first-child{display:flex;flex:1;align-items:baseline;gap:23px;min-width:0}
+.project-title-lines{display:flex;flex-direction:column;gap:2px;min-width:0}
+.project-title-lines .course-name{display:block}
+.project-title-lines .course-subtitle{display:block;margin:0}
+@media(max-width:760px){.project-subject summary > div:first-child{gap:12px}}
+
+/* V11: easy-to-scan materials and one accessible narrated project demo. */
+.materials-list{margin:0;padding:0 0 0 30px;list-style-type:decimal}
+.materials-list li{padding:10px 6px;border-bottom:1px solid var(--thin);line-height:1.6}
+.materials-list li:last-child{border-bottom:0}
+.materials-list strong{color:var(--ink)}
+.project-video{display:block;width:100%;height:auto;aspect-ratio:16 / 9;background:#28221e;border:1px solid var(--line);margin:15px 0 10px;border-radius:3px}
+.video-caption{font-size:12px;color:var(--muted);line-height:1.65}
+.video-transcript{margin:16px 0 28px;border:1px solid var(--thin);background:var(--card);padding:13px 17px;font-size:13px}
+.video-transcript summary{cursor:pointer;font-weight:bold;color:var(--ink)}
+.video-transcript[open] p{font-size:12px;margin:10px 0}
+.project-video-teaser{color:var(--accent)}
+.project-video-link{display:inline-block;margin-left:20px;text-decoration:underline;text-underline-offset:3px;color:var(--accent)}
+@media(max-width:760px){.materials-list{padding-left:26px}.project-video-link{margin:10px 0 0}}
+
+/* V13: approved minimal typewriter wordmark replaces decorative rocket. */
+.hero.hero-wordmark{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:0;text-align:center;padding:72px 0 70px;min-height:270px}
+.hero-wordmark h1{font-family:var(--mono);font-size:clamp(27px,4.35vw,52px);font-weight:400;letter-spacing:.012em;line-height:1.3;white-space:normal;margin:0 0 12px;color:var(--ink)}
+.hero-wordmark p{color:var(--muted);font-size:14px;letter-spacing:.005em}
+@media(max-width:760px){.hero.hero-wordmark{padding:60px 0 53px;min-height:0}.hero-wordmark h1{font-size:clamp(24px,6vw,37px);line-height:1.32}}
